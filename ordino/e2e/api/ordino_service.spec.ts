@@ -21,7 +21,11 @@ test.describe.serial('Pet Store API Tests', () => {
         await ordinoService.update_item();
     })
 
-    test('5. Delete item (DELETE)', async () => {
+    test('5. Update item (PUT)', async () => {
+        await ordinoService.update_item();
+    })
+
+    test('6. Delete item (DELETE)', async () => {
         await ordinoService.delete_item();
     })
 });
